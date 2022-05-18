@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+
+int main()
+{
+ int n1=0,n2=1,fibo_number,i,number;
+
+ printf("Enter the number of elements:");
+ scanf("%d",&number);
+
+ printf("\n%d %d",n1,n2); //printing 0 and 1
+
+ for(i=2; i < number; i++) //loop starts from 2 because 0 and 1 are already printed
+ {
+  fibo_number = n1 + n2;
+  printf(" %d",fibo_number);
+
+  n1 = n2;
+
+  n2 = fibo_number;
+ }
+  return 0;
+ }
