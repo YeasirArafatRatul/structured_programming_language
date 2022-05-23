@@ -2,8 +2,8 @@
 
 int loop(int n){
 
-    if (n==1){
-        printf("Hello World");
+    if (n==0){
+        printf(" ");
     }
 
     else{
@@ -14,9 +14,8 @@ int loop(int n){
 
 }
 
-
 int main(int n){
 
-    loop(20);
+    loop(10);
 
 }

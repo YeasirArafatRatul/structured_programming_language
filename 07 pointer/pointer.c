@@ -1,16 +1,36 @@
 #include<stdio.h>
 
+/*  & = is used to access the address
+    * = is used to access the value
+*/
 
 int main(){
-    int a = 5;
-    int *p = &a;
+    int x = 3;
 
-    printf("Address of a: %d\n", &a);
-    printf("Value of *p: %d\n", p);
-    printf("Address of *p: %d\n", &p);
-    printf("Value stored in the address(which is the value of *p): %d", *p);
+    // pointer works with memory address
+    //storing value of x;
+    int *p = &x;
 
+    int *q;
+    q = &x;
+
+    // prints the value
+    printf("Value of X: %d\n", x);
+    // prints the address
+    printf("Address of X: %p\n", &x);
+
+
+    // prints the value
+    printf("Value of X: %d\n", *p);
+    // prints the address
+    printf("Address of X: %d\n", p);
+
+
+
+    // prints the value
+    printf("Value of X: %d\n", *q);
+    // prints the address
+    printf("Address of X: %d\n", q);
     return 0;
+
 }
-
-
