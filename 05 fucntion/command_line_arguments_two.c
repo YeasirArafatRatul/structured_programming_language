@@ -1,23 +1,22 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(int argc, char *argv[])
+int main(int argcounter, char *argvariables[])
 {
-    int counter;
-    printf("Program Name Is: %s",argv[0]);
 
-    if(argc==1)
-        printf("\nNo Extra Command Line Argument Passed Other Than Program Name");
+    printf("Program Name Is: %s",argvariables[0]);
 
-    if(argc>=2)
+    if(argcounter==1)
+        printf("\n No Extra Command Line Argument Passed Other Than Program Name");
+
+    if(argcounter>=2)
     {
-        printf("\nNumber Of Arguments Passed: %d",argc);
-        printf("\n----Following Are The Command Line Arguments Passed----");
+        printf("\n Number Of Arguments Passed: %d",argcounter);
+        printf("\n ----Following Are The Command Line Arguments Passed----");
+        printf("\n argvariables[0]: %s", argvariables[0]);
 
-        printf("\n argv[0]: %s", argv[0]);
-
-        for(counter=1; counter<argc;counter++)
-            printf("\n argv[%d]: %d",counter, atoi(argv[counter]));
+        for(int i =1; i<argcounter; i++)
+            printf("\n argvariables[%d]: %d",i, atoi(argvariables[i]));
     }
     return 0;
 }
