@@ -14,6 +14,7 @@ int sub(int a, int b)
 int main()
 {
     int choice, a, b;
+    // data_type (*pointer_array_name)[array_size])(arguments) = {function1, function2,...};
     int (*arrayOfptr[number_of_functions])(int, int) = {add, sub};
 
     printf("Enter your choice: \n 1: add \n 2: sub\n");
